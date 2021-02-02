@@ -1,0 +1,14 @@
+﻿@model Coche
+
+<form method="post">
+    <label>Introducir modelo: </label>
+    <input type="text" name="modelo"/>
+    <br/>
+    <button>Buscar</button>
+</form>
+
+@if (Model !=null)
+{
+    <h1>@Model.Marca</h1>
+    <h2>@Model.Modelo</h2>
+}
